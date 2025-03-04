@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<extension point="org.eclipse.m2e.core.projectConfigurators">
+    <configurator
+        id="com.dbf.m2e.aarunpack.AARUnpackProjectConfigurator"
+        class="com.dbf.m2e.aarunpack.AARUnpackProjectConfigurator"
+        name="Maven m2e AAR Unpack Project Configurator"/>
+</extension>
+   <extension
+         point="org.eclipse.m2e.core.lifecycleMappingMetadataSource">
+   </extension>
+</plugin>

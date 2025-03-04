@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lifecycleMappingMetadata>
+	<pluginExecutions>
+		<pluginExecution>
+			<pluginExecutionFilter>
+				<groupId>io.github.dbeaudoinfortin</groupId>
+                <artifactId>maven-aar-unpack-plugin</artifactId>
+                <versionRange>[0.0.1,)</versionRange>
+				<goals>
+					<goal>aar-unpack</goal>
+				</goals>
+			</pluginExecutionFilter>
+			<action>
+			 <configurator>
+	           <id>com.dbf.m2e.aarunpack.AARUnpackProjectConfigurator</id>
+	         </configurator>
+			</action>
+		</pluginExecution>
+	</pluginExecutions>
+</lifecycleMappingMetadata>

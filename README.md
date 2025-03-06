@@ -15,6 +15,16 @@ This plugin is published on [Github Pages](https://dbeaudoinfortin.github.io/M2E
 ![image](https://github.com/user-attachments/assets/aead149a-e97d-4324-ab12-d131b5957239)
 ![image](https://github.com/user-attachments/assets/fa1734c5-e737-4c40-b132-7d583a59a081)
 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2568573e-5bc4-4d93-8583-ce21eae9b006" width="400" />
+  <img src="https://github.com/user-attachments/assets/64e11a46-8131-462b-b8b1-ac916692b7cf" width="400" />
+  <img src="https://github.com/user-attachments/assets/689abf55-4522-4193-8588-66d532bc4eb0" width="400" />
+  <img src="https://github.com/user-attachments/assets/e786feef-3658-4f61-93c3-8a6018dcfebe" width="400" />
+  <img src="https://github.com/user-attachments/assets/aead149a-e97d-4324-ab12-d131b5957239" width="800" />
+  <img src="https://github.com/user-attachments/assets/fa1734c5-e737-4c40-b132-7d583a59a081" width="400" />
+</p>
+
 ## How it works
 
 (Coming soon)

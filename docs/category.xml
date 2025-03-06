@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/M2EMavenAARPluginFeature_0.0.1.qualifier.jar" id="M2EMavenAARPluginFeature" version="0.0.1.qualifier">
+      <category name="M2EMavenAARPluginSite"/>
+   </feature>
+   <category-def name="M2EMavenAARPluginSite" label="M2E - Maven AAR Plugin">
+      <description>
+         M2E Eclipse plugin for the Maven AAR plugin
+      </description>
+   </category-def>
+</site>

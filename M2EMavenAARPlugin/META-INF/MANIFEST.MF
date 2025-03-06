@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: M2E - Maven AAR Plugin
 Bundle-SymbolicName: M2EMavenAARPlugin;singleton:=true
 Bundle-Vendor: David Fortin
-Bundle-Version: 0.0.1
+Bundle-Version: 0.0.1.qualifier
 Automatic-Module-Name: M2EMavenAARPlugin
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

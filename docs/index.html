@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2EMavenAARPlugin</title>
+    <link rel="stylesheet" href="web/site.css">
+    <script>
+        async function loadXML(url) {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Failed to load ${url}`);
+            }
+            const text = await response.text();
+            return new window.DOMParser().parseFromString(text, "text/xml");
+        }
+
+        async function transform() {
+            try {
+                const xmlFile = await loadXML("site.xml");
+                const stylesheet = await loadXML("web/site.xsl");
+
+                const xsltProcessor = new XSLTProcessor();
+                xsltProcessor.importStylesheet(stylesheet);
+
+                const resultDocument = xsltProcessor.transformToFragment(xmlFile, document);
+
+                document.getElementById("data").innerHTML = ""; // Clear old content
+                document.getElementById("data").appendChild(resultDocument);
+            } catch (error) {
+                console.error("Error during transformation:", error);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", transform);
+    </script>
+</head>
+<body>
+    <!--[insert static HTML here]-->
+    <div id="data"><!-- this is where the transformed data goes --></div>
+</body>
+</html>

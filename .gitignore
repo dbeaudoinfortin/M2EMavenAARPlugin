@@ -2,3 +2,11 @@
 /.project
 /.settings
 /bin
+/M2EMavenAARPlugin/.settings
+/M2EMavenAARPlugin/.classpath
+/M2EMavenAARPlugin/.project
+/M2EMavenAARPlugin/bin
+/M2EMavenAARPluginFeature/.project
+/M2EMavenAARPluginSite/.project
+/M2EMavenAARPluginFeature/.settings
+/M2EMavenAARPluginSite/.settings

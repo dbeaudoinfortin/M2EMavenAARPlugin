@@ -4,6 +4,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -61,7 +62,13 @@ public class AARUnpackBuildParticipant extends AbstractBuildParticipant {
         }
         
         System.out.println("AAR Unpack Plugin: Execution complete.");
-        return projectWasModified ? Set.of(project) : null;
+        if(projectWasModified) {
+        	Set<IProject> set = new HashSet<IProject>();
+        	set.add(project);
+        	return set;
+        }
+        
+        return null;
     }
 	
 	private boolean updateClasspath(MavenProject mavenProject, IJavaProject javaProject, IProgressMonitor monitor) throws JavaModelException {

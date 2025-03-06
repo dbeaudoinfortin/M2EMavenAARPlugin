@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="M2EMavenAARPluginFeature"
-      label="M2EMavenAARPluginFeature"
+      label="M2E - Maven AAR Plugin"
       version="0.0.1.qualifier"
       provider-name="David Fortin">
 

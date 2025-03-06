@@ -8,21 +8,15 @@ You can manually download this plugin from the [releases section](https://github
 
 This plugin is published on [Github Pages](https://dbeaudoinfortin.github.io/M2EMavenAARPlugin/), which is deployed directly from the [/docs](https://github.com/dbeaudoinfortin/M2EMavenAARPlugin/tree/main/docs) directory of this Github repository. The easiest way to install the plugin is via the menu option `Help -> Install New Software...`, then clicking the `Add...` button, entering the site `https://dbeaudoinfortin.github.io/M2EMavenAARPlugin/` in the `Location` box and clicking the `Add` button to add a new software installation site.
 
-![image](https://github.com/user-attachments/assets/2568573e-5bc4-4d93-8583-ce21eae9b006)
-![image](https://github.com/user-attachments/assets/64e11a46-8131-462b-b8b1-ac916692b7cf)
-![image](https://github.com/user-attachments/assets/689abf55-4522-4193-8588-66d532bc4eb0)
-![image](https://github.com/user-attachments/assets/e786feef-3658-4f61-93c3-8a6018dcfebe)
-![image](https://github.com/user-attachments/assets/aead149a-e97d-4324-ab12-d131b5957239)
-![image](https://github.com/user-attachments/assets/fa1734c5-e737-4c40-b132-7d583a59a081)
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2568573e-5bc4-4d93-8583-ce21eae9b006" width="400" />
-  <img src="https://github.com/user-attachments/assets/64e11a46-8131-462b-b8b1-ac916692b7cf" width="400" />
-  <img src="https://github.com/user-attachments/assets/689abf55-4522-4193-8588-66d532bc4eb0" width="400" />
-  <img src="https://github.com/user-attachments/assets/e786feef-3658-4f61-93c3-8a6018dcfebe" width="400" />
-  <img src="https://github.com/user-attachments/assets/aead149a-e97d-4324-ab12-d131b5957239" width="800" />
-  <img src="https://github.com/user-attachments/assets/fa1734c5-e737-4c40-b132-7d583a59a081" width="400" />
+  <img src="https://github.com/user-attachments/assets/2568573e-5bc4-4d93-8583-ce21eae9b006" width="400" /><br/>
+  <img src="https://github.com/user-attachments/assets/64e11a46-8131-462b-b8b1-ac916692b7cf" width="400" /><br/>
+  <img src="https://github.com/user-attachments/assets/689abf55-4522-4193-8588-66d532bc4eb0" width="400" /><br/>
+  <img src="https://github.com/user-attachments/assets/e786feef-3658-4f61-93c3-8a6018dcfebe" width="400" /><br/>
+  <img src="https://github.com/user-attachments/assets/aead149a-e97d-4324-ab12-d131b5957239" width="800" /><br/>
+  <img src="https://github.com/user-attachments/assets/fa1734c5-e737-4c40-b132-7d583a59a081" width="400" /><br/>
 </p>
 
 ## How it works

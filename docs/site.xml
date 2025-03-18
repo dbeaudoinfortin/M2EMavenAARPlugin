@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/M2EMavenAARPluginFeature_0.0.1.202503052335.jar" id="M2EMavenAARPluginFeature" version="0.0.1.202503052335">
+   <feature url="features/M2EMavenAARPluginFeature_0.0.2.202503172308.jar" id="M2EMavenAARPluginFeature" version="0.0.2.202503172308">
       <category name="M2EMavenAARPluginSite"/>
    </feature>
    <category-def name="M2EMavenAARPluginSite" label="M2E - Maven AAR Plugin">

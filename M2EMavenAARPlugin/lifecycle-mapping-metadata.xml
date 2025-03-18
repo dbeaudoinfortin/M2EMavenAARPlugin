@@ -5,7 +5,7 @@
 			<pluginExecutionFilter>
 				<groupId>io.github.dbeaudoinfortin</groupId>
                 <artifactId>maven-aar-unpack-plugin</artifactId>
-                <versionRange>[0.0.1,)</versionRange>
+                <versionRange>[0.0.3,)</versionRange>
 				<goals>
 					<goal>aar-unpack</goal>
 				</goals>

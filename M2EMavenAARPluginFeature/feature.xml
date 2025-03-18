@@ -2,7 +2,7 @@
 <feature
       id="M2EMavenAARPluginFeature"
       label="M2E - Maven AAR Plugin"
-      version="0.0.1.qualifier"
+      version="0.0.2.qualifier"
       provider-name="David Fortin">
 
    <description url="https://github.com/dbeaudoinfortin/M2EMavenAARPlugin">
@@ -44,6 +44,6 @@ SOFTWARE.
 
    <plugin
          id="M2EMavenAARPlugin"
-         version="0.0.1.qualifier"/>
+         version="0.0.2.qualifier"/>
 
 </feature>

@@ -2,10 +2,10 @@ package com.dbf.m2e.aarunpack;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.apache.maven.plugin.MojoExecution;
@@ -74,7 +74,6 @@ public class AARUnpackBuildParticipant extends AbstractBuildParticipant {
 	private boolean updateClasspath(MavenProject mavenProject, IJavaProject javaProject, IProgressMonitor monitor) throws JavaModelException {
 		boolean modified = false;
 
-		
 		Object extractDirO = mavenProject.getContextValue(CONTEXT_EXTRACT_DIR);
         Path extractDir = (null != extractDirO) ? IPath.fromOSString(extractDirO.toString()).toPath() : null;
         
@@ -93,19 +92,25 @@ public class AARUnpackBuildParticipant extends AbstractBuildParticipant {
         }
         
         Object classPathO = mavenProject.getContextValue(CONTEXT_CLASSPATH);
-        if(null != classPathO || (classPathO instanceof Collection<?>)) {
+        if(null != classPathO || (classPathO instanceof List<?>)) {
+        	List<?> classPathList = (List<?>) classPathO;
         	//Add a new library classpath entry to the Eclipse project for each AAR package
-        	for(Object newEntry : (Collection<?>) classPathO) {
-        		final String entryPath = newEntry.toString();
+        	for(Object newEntryO : classPathList) {
+        		if(null != newEntryO || (newEntryO instanceof Map.Entry<?, ?>)) {
+        			Map.Entry<?, ?> newEntry = (Map.Entry<?, ?>) newEntryO;
+        			if(null == newEntry.getKey()) continue;
+        			
+        			final String classesPathString = newEntry.getKey().toString();
+        			final String sourcePathString = (newEntry.getValue() == null) ? null : newEntry.getValue().toString();
+            		final IPath classesPath = IPath.fromOSString(classesPathString);
+            		final IPath sourcesPath = (sourcePathString == null) ? null : IPath.fromOSString(sourcePathString);
+            		
+            		System.out.println("AAR Unpack Plugin: Adding new classpath entry " + classesPathString);
+    				IClasspathEntry aarPackage = JavaCore.newLibraryEntry(classesPath, sourcesPath, null);
+    				classpathEntries.add(aarPackage);
+    				modified = true;
+        		}
         		
-        		System.out.println("AAR Unpack Plugin: Adding new classpath entry " + entryPath);
-				IClasspathEntry aarPackage = JavaCore.newLibraryEntry(IPath.fromOSString(entryPath),
-						null, // No source attachment
-						null, // No javadoc
-						true // Exported
-				);
-				classpathEntries.add(aarPackage);
-				modified = true;
         	}           
         }
         
